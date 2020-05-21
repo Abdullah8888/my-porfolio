@@ -1,0 +1,105 @@
+@import './utils';
+
+
+.container {
+  background-color: #24252A;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  color: white;
+}
+
+.nav_links li{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+  //transition: all 0.3s ease 0s;
+}
+
+li:nth-child(6) {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(8, 136, 169, 1);
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  color: red;
+}
+.link:active {
+  background-color: red;
+}
+// .contact {
+//   text-decoration: none;
+//   font-size: 14px;
+//   font-weight: 500;
+//   background-color: rgba(8, 136, 169, 1);
+//   padding: 10px 25px;
+//   border-radius: 30px;
+//   border: none;
+//   color: #fff;
+// }
+
+
+.bar {
+  display: none;
+}
+
+/* Using SCSS variables to store breakpoints */
+
+// @media (min-width:320px) and (max-width: 414px){
+//     .container {
+//       color: red;
+//     }
+//
+//     ul {
+//       width: 80px;
+//       font-size: 10px;
+//     }
+// }
+
+.container {
+  @include breakpoint(s){
+    display: block;
+
+    .nav_links {
+      display: none;
+    }
+
+    .nav_links_mobile {
+      margin-top: 50px;
+      li {
+        text-align: center;
+        margin: 15px auto;
+        
+        list-style: none;
+        .link {
+          color: #fff;
+        }
+      }
+    }
+
+    .bar {
+      display: block;
+      position: absolute;
+      top: 3px;
+      right: 20px;
+      font-size: 30px;
+    }
+  }
+
+}
