@@ -19,7 +19,7 @@
 .nav_links li{
   list-style: none;
   display: inline-block;
-  padding: 0px 20px;
+  padding: 10px 20px;
 }
 
 .link {
@@ -27,7 +27,12 @@
   font-weight: 500;
   color: white;
   font-size: 14px;
+
   //transition: all 0.3s ease 0s;
+}
+
+li:nth-child(-n + 5):hover {
+  background-color: rgb(148, 157, 160);
 }
 
 li:nth-child(6) {
@@ -38,39 +43,19 @@ li:nth-child(6) {
   padding: 10px 25px;
   border-radius: 30px;
   border: none;
-  color: red;
 }
-.link:active {
-  background-color: red;
+
+.selectedLink {
+  color: rgb(247, 104, 104);
 }
-// .contact {
-//   text-decoration: none;
-//   font-size: 14px;
-//   font-weight: 500;
-//   background-color: rgba(8, 136, 169, 1);
-//   padding: 10px 25px;
-//   border-radius: 30px;
-//   border: none;
-//   color: #fff;
-// }
-
-
+.link:nth-child(-n + 5):active:checked{
+  color: greenyellow
+}
 .bar {
   display: none;
 }
 
 /* Using SCSS variables to store breakpoints */
-
-// @media (min-width:320px) and (max-width: 414px){
-//     .container {
-//       color: red;
-//     }
-//
-//     ul {
-//       width: 80px;
-//       font-size: 10px;
-//     }
-// }
 
 .container {
   @include breakpoint(s){

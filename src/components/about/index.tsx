@@ -5,7 +5,10 @@ import '../../assets/scss/about.scss';
 class About extends React.PureComponent {
 	render() {
 		return (
-             <p className="Content">Welcome to About Page</p> 
+			 <div className="about_container">
+				<h1>Aboute Me</h1> 
+				<p></p>
+			 </div>
 		);
 	}
 }

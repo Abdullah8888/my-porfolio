@@ -1,5 +1,12 @@
-.Content {
-    text-align: center;
-    font-size: medium;
-    font-weight: bold;
+.about_container {
+    padding: 0;
+    margin: 0;
+    background-color: red;
   }
+
+.about_container > h1 {
+    color: #000;
+    position: relative;
+    padding-top: 30px;
+    left: 20px;
+}

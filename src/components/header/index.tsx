@@ -2,7 +2,7 @@ import React from 'react';
 import '../../assets/scss/header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 interface Props {} 
 interface State {
@@ -27,6 +27,13 @@ export default class HeaderLayout extends React.Component<Props, State> {
         }
         
     }
+
+    setActiveLink = () => {
+        
+
+        
+    }
+
     componentDidMount () {
         
     }
@@ -43,12 +50,12 @@ export default class HeaderLayout extends React.Component<Props, State> {
                 <div className="container ">
                     <div className="logo">Logo</div>
                         <ul className={ this.state.isOpen ? 'nav_links_mobile' : 'nav_links' }>
-                            <li><Link to="/" className="link"> Home </Link></li>
-                            <li><Link to="/about" className="link "> Services </Link></li>
-                            <li><Link to="/shop" className="link"> Blog </Link></li>
-                            <li><Link to="/shop" className="link"> Projects </Link></li>
-                            <li><Link to="/about" className="link"> About </Link></li> 
-                            <li><Link to="/shop" className='link'> Contact </Link></li>                   
+                            <li><NavLink to="/" className="link"  > Home </NavLink></li>
+                            <li><NavLink to="/services" className="link " activeClassName="selectedLink" > Services </NavLink></li>
+                            <li><NavLink to="/blog" className="link" activeClassName="selectedLink"> Blog </NavLink></li>
+                            <li><NavLink to="/projects" className="link" activeClassName="selectedLink"> Projects </NavLink></li>
+                            <li><NavLink to="/about" className="link" activeClassName="selectedLink" > About </NavLink></li> 
+                            <li><NavLink to="/contact" className='link' activeClassName="selectedLink"> Contact </NavLink></li>                   
                         </ul>
                     
                         
