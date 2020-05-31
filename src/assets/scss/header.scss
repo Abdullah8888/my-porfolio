@@ -1,13 +1,15 @@
 @import './utils';
 
 
-.container {
+.header_container {
   background-color: #24252A;
   font-family: "Montserrat", sans-serif;
   padding: 10px 10%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  
 }
 
 .logo {
@@ -27,8 +29,6 @@
   font-weight: 500;
   color: white;
   font-size: 14px;
-
-  //transition: all 0.3s ease 0s;
 }
 
 li:nth-child(-n + 5):hover {
@@ -48,16 +48,14 @@ li:nth-child(6) {
 .selectedLink {
   color: rgb(247, 104, 104);
 }
-.link:nth-child(-n + 5):active:checked{
-  color: greenyellow
-}
+
 .bar {
   display: none;
 }
 
 /* Using SCSS variables to store breakpoints */
 
-.container {
+.header_container {
   @include breakpoint(s){
     display: block;
 
