@@ -1,9 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const InterpolateHtmlPlugin = require('interpolate-html-plugin');
+//const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 const APP_PATH = path.resolve(__dirname, 'public');
 console.log('the path is' + APP_PATH)
-const NODE_MODULE_PATH = path.resolve(__dirname, 'node_modules');
+//const NODE_MODULE_PATH = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
 
@@ -16,6 +16,12 @@ module.exports = {
     filename: 'bundle.js'
   },
 
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    }
+
+  },
   // adding .ts and .tsx to resolve.extensions will help babel look for .ts and .tsx files to transpile
   resolve: {
     extensions: ['.ts', '.tsx', '.js']

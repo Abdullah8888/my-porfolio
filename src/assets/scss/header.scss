@@ -16,6 +16,9 @@
   cursor: pointer;
   margin-right: auto;
   color: white;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 30px;
 }
 
 .nav_links li{
@@ -31,11 +34,11 @@
   font-size: 14px;
 }
 
-li:nth-child(-n + 4):hover {
+.nav_links li:nth-child(-n + 4):hover {
   background-color: rgb(148, 157, 160);
 }
 
-li:nth-child(5) {
+.nav_links li:nth-child(5) { 
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -70,10 +73,20 @@ li:nth-child(5) {
         margin: 15px auto;
         
         list-style: none;
-        .link {
-          color: #fff;
-        }
+       
       }
+    }
+
+    .nav_links_mobile li:hover {
+      color: pink;
+
+    }
+
+    .nav_links_mobile li:nth-child(5) { 
+      background-color: rgba(8, 136, 169, 1);
+      padding: 10px 25px;
+      border-radius: 30px;
+      border: none;
     }
 
     .bar {

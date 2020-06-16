@@ -34,6 +34,11 @@ export default class HeaderLayout extends React.Component<Props, State> {
         
     }
 
+    closeLinks = () => {
+        this.setState({isOpen: false, check: false})
+
+    }
+
     componentDidMount () {
         
     }
@@ -50,11 +55,11 @@ export default class HeaderLayout extends React.Component<Props, State> {
                 <div className="header_container ">
                     <div className="logo">JT</div>
                         <ul className={ this.state.isOpen ? 'nav_links_mobile' : 'nav_links' }>
-                            <li><NavLink to="/" className="link"  > Home </NavLink></li>
-                            <li><NavLink to="/services" className="link " activeClassName="selectedLink" > Services </NavLink></li>
-                            <li><NavLink to="/blog" className="link" activeClassName="selectedLink"> Blog </NavLink></li>
-                            <li><NavLink to="/projects" className="link" activeClassName="selectedLink"> Portfolio </NavLink></li>
-                            <li><NavLink to="/about" className="link" activeClassName="selectedLink" > About </NavLink></li> 
+                            <li><NavLink to="/" className="link" onClick={this.closeLinks} > Home </NavLink></li>
+                            <li><NavLink to="/services" className="link " activeClassName="selectedLink" onClick={this.closeLinks}> Services </NavLink></li>
+                            <li><NavLink to="/blog" className="link" activeClassName="selectedLink" onClick={this.closeLinks}> Blog </NavLink></li>
+                            <li><NavLink to="/projects" className="link" activeClassName="selectedLink" onClick={this.closeLinks}> Portfolio </NavLink></li>
+                            <li><NavLink to="/about" className="link" activeClassName="selectedLink" onClick={this.closeLinks} > About </NavLink></li> 
                             {/* <li><NavLink to="/contact" className='link' activeClassName="selectedLink"> Contact </NavLink></li>                    */}
                         </ul>
                     

@@ -1,3 +1,5 @@
+@import './utils';
+
 .about_container {
   font-size: medium;
   font-weight: bold;
@@ -22,31 +24,52 @@
       //justify-content: space-between;
 
       div {
-        // border-style: solid;
+        border-style: solid;
         // border-width: 3px;
         // border-color: green;
         // background-color: red;
+        border-color: #fff;;
+        box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(245, 243, 243, 0.863);
         color: #fff;
-        padding: 40px;
+        padding: 10px;
+        margin: 40px;
+        text-align: center;
 
         h1 {
           
         }
         
         p {
-          border: 1px solid;
+          //border: 1px solid;
           //padding: 5px;
-          border-color: #fff;;
+          // border-color: #fff;;
           color: #fff;
-          line-height: 25px;
+          line-height: 30px;
           font-weight: normal;
           //background-color: rgba(8, 136, 169, 1);
-          //width: 400px;
-          box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(245, 243, 243, 0.863);
-          text-align: left;
-          //background-color: #fff;
-          padding: 10px;
+          width: 500px;
+          //box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(245, 243, 243, 0.863);
+          text-align: center;
+          margin-top: 10px;
         }
       }
     }
   }
+
+  /* Using SCSS variables to store breakpoints */
+
+.about_container {
+  @include breakpoint(s){
+
+    .content {
+      padding: 0px;
+      div {
+        p {
+          width: 250px;
+        }
+      }
+
+    }
+
+  }
+}

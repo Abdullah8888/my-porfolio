@@ -1,0 +1,91 @@
+@import './utils';
+
+.project_container {
+    font-size: medium;
+    font-weight: bold;
+    background-color: #24252A;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    .project_header {
+        padding: 20px 20px;
+        font-size: 30px;
+        text-shadow: 1px 1px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        padding: 20px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        //flex-direction: column;
+
+        .project_card {
+            //border: 1px solid;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow:  0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(2, 2, 2, 0.863);
+
+            .project_img_and_navigation {
+                padding: 20px;
+                flex-direction: column;
+                .project_card_image {
+                    //border: 1px solid;
+                }
+                .project_card_navigation {
+                    text-align: center;
+                    ul > li {
+                        cursor: pointer;
+                        font-size: 7px;
+                        padding: 10px;
+                        list-style: none;
+                        display: inline-block;
+                    }
+    
+                }
+
+            }
+
+            .project_card_bottom {
+                margin-left: 0px;
+                padding-top: 20px;
+                padding-right: 10px;
+                text-align: left;
+                //font-family: "Montserrat", sans-serif;
+                font-weight: normal;
+                line-height: 25px;
+
+                 .tools_used {
+                    color: rgb(140, 212, 230);
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+    }
+}
+
+  /* Using SCSS variables to store breakpoints */
+
+  .project_container {
+    @include breakpoint(s){
+  
+      .content {
+        .project_card {
+            .project_card_bottom {
+                padding: 7px;
+                text-align: center;
+            }
+        }
+  
+      }
+  
+    }
+  }
