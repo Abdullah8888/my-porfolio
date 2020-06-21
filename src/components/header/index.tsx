@@ -60,7 +60,6 @@ export default class HeaderLayout extends React.Component<Props, State> {
                             <li><NavLink to="/blog" className="link" activeClassName="selectedLink" onClick={this.closeLinks}> Blog </NavLink></li>
                             <li><NavLink to="/projects" className="link" activeClassName="selectedLink" onClick={this.closeLinks}> Portfolio </NavLink></li>
                             <li><NavLink to="/about" className="link" activeClassName="selectedLink" onClick={this.closeLinks} > About </NavLink></li> 
-                            {/* <li><NavLink to="/contact" className='link' activeClassName="selectedLink"> Contact </NavLink></li>                    */}
                         </ul>
                     
                         
