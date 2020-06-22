@@ -20,7 +20,7 @@ export default class Home extends React.Component<HomeSateFields>{
     }
 
     componentDidMount() {
-        storage.ref('images').child('me-min.png').getDownloadURL()
+        storage.ref('images').child('tunde_circle.png').getDownloadURL()
         .then(url => {
             console.log('the url is ' + url)
             this.setState({
@@ -49,7 +49,7 @@ export default class Home extends React.Component<HomeSateFields>{
                         {sam}
                     </div>
                     <h1>Jimoh Babatunde Olalekan</h1>
-                    <h3>Mobile App Developer ( Swift, Objective-C, Kolin, Flutter )</h3>
+                    <h3>Mobile App Developer ( Swift, Objective-C, Kotlin, Flutter )</h3>
                     <p>Please click <span><a href="https://drive.google.com/file/d/15CN1MI-tXY5Muxlso9XPUzen4eRXm3Ko/view?usp=sharing" className="styled-link" target="_blank">here</a></span> to have access to my resume</p>
                     <p>Get in touch with me via <span><a href="mailto:abdullahijimoh3.ja@gmail.com" className="styled-link">abdullahijimoh3.ja@gmail.com</a></span></p>
                     
