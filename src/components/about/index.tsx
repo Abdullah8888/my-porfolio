@@ -29,9 +29,8 @@ class About extends React.PureComponent {
 						</p>
 					</div>
 					<div>
-						<h2>Some few fun facts about m</h2>
-						<p>I like reading the Holy Quran and listening to Quran recitations
-							<br />also love watching and playing football
+						<h2>Some few fun facts about me</h2>
+						<p>I like reading the books, watching and playing football
 						</p>
 					</div>
 					{/* <div>
