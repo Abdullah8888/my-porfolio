@@ -278,7 +278,7 @@ export default class Projects extends React.Component<ImageSliderState> {
 
                         <div className="project_card_bottom">
                             <p>Updated DSTV/GOTV subscription endpoints,
-                               I built a custom UIPickerView with Objective C, to 
+                               I built a custom UIPickerView with Objective C to 
                                replace the third party picker view on the app ,
                                Fixed bugs and improve app performance.
                                <br/><i className="tools_used">Tools used: Objective C, Xcode</i> 
@@ -333,7 +333,7 @@ export default class Projects extends React.Component<ImageSliderState> {
                                 preapre the documentation and screenshots needed for 
                                 app submission in play store and app store.
                                 <br/><i className="tools_used">Tools used: Figma, Xcode, Flutter, Dart, vscode</i>
-                                <br/>click to <span><a href="https://github.com/Abdullah8888/avengers-stage-2-mobile" className="tools_used">here</a></span> to have access to the repo 
+                                <br/>click <span><a href="https://github.com/Abdullah8888/avengers-stage-2-mobile" className="tools_used">here</a></span> to have access to the repo 
                             </p>
                         </div>
 
@@ -353,10 +353,10 @@ export default class Projects extends React.Component<ImageSliderState> {
                         </div>
 
                         <div className="project_card_bottom">
-                            <p>Shopping is a demo app. This was used to improve and perfect,
-                                my flutter and dart skills. A sample of this was also done in kotlin.
+                            <p>Shopping is a demo app. This was built to improve and perfect
+                                my flutter skills.
                                 <br/><i className="tools_used">Tools used: Flutter, Dart, vscode</i>
-                                <br/>click to <span><a href="https://github.com/Abdullah8888/flutter_shopping_app" className="tools_used">here</a></span> to have access to the repo 
+                                <br/>click <span><a href="https://github.com/Abdullah8888/flutter_shopping_app" className="tools_used">here</a></span> to have access to the repo 
                             </p>
                         </div>
 
@@ -375,9 +375,9 @@ export default class Projects extends React.Component<ImageSliderState> {
                         </div>
 
                         <div className="project_card_bottom">
-                            <p>Portfolio is a demo app. This was used to improve and perfect,
-                                my kotlin skills. <br/><i className="tools_used">Tools used: Kolin, Android Studio</i>
-                                <br/>click to <span><a href="https://github.com/Abdullah8888/PortfolioApp" className="tools_used">here</a></span> to have access to the repo 
+                            <p>Portfolio is a demo app. This was built to improve and perfect
+                                my kotlin skills. <br/><i className="tools_used">Tools used: Kotlin, Android Studio</i>
+                                <br/>click <span><a href="https://github.com/Abdullah8888/PortfolioApp" className="tools_used">here</a></span> to have access to the repo 
                             </p>
                         </div>
 
