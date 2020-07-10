@@ -22,12 +22,13 @@ class Services extends React.PureComponent {
                         </div>
 
                         <div>
-                            <h3>Mentor</h3>
+                            <h3>Mentoring</h3>
                             <div className="skills">
                                 <p>Available online courses are </p>
                                 <li>Mobile Development (Swift, Objectice C, Flutter, Kotlin)</li>
                                 <li>Frontend Development (React, HTML, CSS, SASS, Javascript)</li>
-                                <p>Learn online, you can reach me at <span><a href="mailto:abdullahijimoh3.ja@gmail.com" className="mailme">abdullahijimoh3.ja@gmail.com</a></span></p>
+                                <p>Learn online, click <a href="https://wa.link/yxv8as" className="mailme" target="_blank" rel="noopener noreferrer">here</a> to chat me up on whatsapp </p>
+                                 <p>or via <a href="mailto:abdullahijimoh3.ja@gmail.com" className="mailme">abdullahijimoh3.ja@gmail.com</a></p>
                             </div>
 
                         </div>
