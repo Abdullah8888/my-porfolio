@@ -252,8 +252,9 @@ export default class Projects extends React.Component<ImageSliderState> {
 
                         <div className="project_card_bottom">
                             <p>Responsible for maintaining and optimising the performance of the app. I
-                               integrated Smartech sdk to track user’s event and online sales AI for product Ads on the app,
-                               implemented new homepage design,
+                               integrated Smartech sdk to track number of user per event and for push notification,
+                               online sales AI integration for product Ads in the app, added new relic to track
+                               users' interaction with the app, implemented new homepage design,
                                fixed bug on network request seen as a malicious bot on the server and many more.
                                 <br/><i className="tools_used">Tools used: Swift, Xcode</i> 
                             </p>
