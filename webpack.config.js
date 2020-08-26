@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin')
 //const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 const APP_PATH = path.resolve(__dirname, 'public');
 console.log('the path is' + APP_PATH)
@@ -11,10 +12,15 @@ module.exports = {
   entry: './src/index',
 
   // and output it into /dist as bundle.js
+  // output: {
+  //   path: path.join(__dirname, 'dist'),
+  //   filename: 'bundle.js'
+  // },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+
 
   optimization: {
     splitChunks: {
@@ -24,7 +30,7 @@ module.exports = {
   },
   // adding .ts and .tsx to resolve.extensions will help babel look for .ts and .tsx files to transpile
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js', '.json']
   },
 
   module: {
@@ -54,7 +60,13 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ inject: true, template: path.join(APP_PATH, 'index.html')}),
+    new HtmlWebpackPlugin({ inject: true, 
+      template: path.join(APP_PATH, 'index.html'),
+      favicon: path.join(APP_PATH, 'favicon.ico'),}),
+    
+    new ManifestPlugin({
+      fileName: path.join(APP_PATH, 'manifest.json'),
+    })
    
   ]
 };

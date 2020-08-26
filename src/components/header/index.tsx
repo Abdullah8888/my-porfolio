@@ -1,8 +1,9 @@
-import React from 'react';
-import '../../assets/scss/header.scss';
+import React from 'react'
+import '../../assets/scss/header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom'
+import myLogo from '../../assets/images/circle_jt_image.png'
 
 interface Props {} 
 interface State {
@@ -53,7 +54,7 @@ export default class HeaderLayout extends React.Component<Props, State> {
     render(){
             return(
                 <div className="header_container ">
-                    <div className="logo">JT</div>
+                    <div className="logo"><img src={ myLogo } alt="my logo" width="80px" height="80px" /></div>
                         <ul className={ this.state.isOpen ? 'nav_links_mobile' : 'nav_links' }>
                             <li><NavLink to="/" className="link" onClick={this.closeLinks} > Home </NavLink></li>
                             <li><NavLink to="/services" className="link " activeClassName="selectedLink" onClick={this.closeLinks}> Services </NavLink></li>

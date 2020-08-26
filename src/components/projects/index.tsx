@@ -2,20 +2,6 @@ import React from 'react';
 import '../../assets/scss/projects.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
-// import Bg from '../../assets/images/welcome_screen.jpg';
-// import Bg2 from '../../assets/images/result_screen.jpg';
-// import brainy1 from '../../assets/images/img_2_list/brainy_1.png';
-// import brainy2 from '../../assets/images/img_2_list/brainy_2.png';
-// import brainy3 from '../../assets/images/img_2_list/brainy_3.png';
-// import quran1 from '../../assets/images/img_1_list/quran_1.png';
-// import quran2 from '../../assets/images/img_1_list/quran_2.png';
-// import quran3 from '../../assets/images/img_1_list/quran_3.png';
-// import flutterShop1 from '../../assets/images/img_3_list/flutter_shop1.png';
-// import flutterShop2 from '../../assets/images/img_3_list/flutter_shop2.png';
-// import flutterShop3 from '../../assets/images/img_3_list/flutter_shop3.png';
-// import portfolio1 from '../../assets/images/img_4_list/portfolio_1.png';
-// import portfolio2 from '../../assets/images/img_4_list/portfolio_2.png';
-// import portfolio3 from '../../assets/images/img_4_list/portfolio_3.png';
 
 //interface Props { }
 interface ImageSliderState {
@@ -214,6 +200,10 @@ export default class Projects extends React.Component<ImageSliderState> {
         }
        
 
+    }
+
+    componentDidMount() {
+        document.title = 'Portfolio'
     }
 
     // componentDidMount () {

@@ -3,6 +3,11 @@ import '../../assets/scss/about.scss';
 
 
 class About extends React.PureComponent {
+
+	componentDidMount() {
+        document.title = 'About'
+	}
+	
 	render() {
 		return (
 			<div className="about_container">

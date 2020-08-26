@@ -20,6 +20,7 @@ export default class Home extends React.Component<HomeSateFields>{
     }
 
     componentDidMount() {
+        document.title = 'Tundev'
         storage.ref('images').child('tunde_circle.png').getDownloadURL()
         .then(url => {
             console.log('the url is ' + url)

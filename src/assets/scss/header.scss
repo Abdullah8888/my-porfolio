@@ -4,7 +4,7 @@
 .header_container {
   background-color: #24252A;
   font-family: "Montserrat", sans-serif;
-  padding: 10px 10%;
+  padding: 10px 5%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -15,10 +15,11 @@
 .logo {
   cursor: pointer;
   margin-right: auto;
-  color: white;
-  font-weight: bold;
-  line-height: 30px;
-  font-size: 30px;
+  
+  img {
+    box-shadow: -4px 0px 7px #fff;
+    border-radius:40px;
+  }
 }
 
 .nav_links li{
@@ -66,6 +67,10 @@
       display: none;
     }
 
+    .logo {
+      width: 100%;
+    }
+
     .nav_links_mobile {
       margin-top: 50px;
       li {
@@ -92,7 +97,7 @@
     .bar {
       display: block;
       position: absolute;
-      top: 3px;
+      top: 33px;
       right: 20px;
       font-size: 30px;
     }

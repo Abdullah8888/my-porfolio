@@ -3,6 +3,10 @@ import '../../assets/scss/services.scss';
 
 
 class Services extends React.PureComponent {
+
+    componentDidMount() {
+        document.title = 'Services'
+    }
     render() {
         return (
             <div className="services_container">
