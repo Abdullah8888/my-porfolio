@@ -241,7 +241,7 @@ export default class Projects extends React.Component<ImageSliderState> {
                         </div>
 
                         <div className="project_card_bottom">
-                            <p>Responsible for maintaining and optimising the performance of the app. I
+                            <p>Responsible for maintaining and optimizing the performance of the app. I
                                integrated Smartech sdk to track number of user per event and for push notification,
                                online sales AI integration for product Ads in the app, added new relic to track
                                users' interaction with the app, implemented new homepage design,
@@ -269,9 +269,10 @@ export default class Projects extends React.Component<ImageSliderState> {
 
                         <div className="project_card_bottom">
                             <p>Updated DSTV/GOTV subscription endpoints,
-                               I built a custom UIPickerView with Objective C to 
-                               replace the third party picker view on the app ,
-                               Fixed bugs and improve app performance.
+                               I built a custom UIPickerView to replace 
+                               a third party picker view in the app ,
+                               added a pop up that shows up for every new wersion of the app,
+                               fixed bugs and improve app performance.
                                <br/><i className="tools_used">Tools used: Objective C, Xcode</i> 
                             </p>
                         </div>
@@ -295,10 +296,9 @@ export default class Projects extends React.Component<ImageSliderState> {
 
                         <div className="project_card_bottom">
                             <p>Quran247 app is owned by Dawah Nigeria (A platform for the Ummah),
-                                the app contain all Nigerian Hafiz (i.e Quran reciters), 
-                                which users can stream or download any of the quran reciter's track. 
-                                the app also connects to some wep app of the platform, 
-                                which are embeded in this app.
+                                the app contain all Nigerian Hafiz (i.e Quran reciters), it allow 
+                                users to stream or download any of the quran reciter's track 
+                                and to visit some of their web platform from the app. 
                                 <br/><i className="tools_used">Tools used: Swift, Xcode</i> 
                             </p>
                         </div>
@@ -318,11 +318,10 @@ export default class Projects extends React.Component<ImageSliderState> {
                         </div>
 
                         <div className="project_card_bottom">
-                            <p>Brainy app was a task given my team during the HNGi7
-                                An online intership programm). I built the UI 
-                                of the app using figma, debug some part of the code
-                                preapre the documentation and screenshots needed for 
-                                app submission in play store and app store.
+                            <p>Brainy app was a task given to my team during the HNGi7
+                                (An online internship programm). I made the UI of the app using figma, 
+                                responsible for code optimization, prepare the documentation and screenshots 
+                                needed for app submission in play store and app store.
                                 <br/><i className="tools_used">Tools used: Figma, Xcode, Flutter, Dart, vscode</i>
                                 <br/>click <span><a href="https://github.com/Abdullah8888/avengers-stage-2-mobile" className="tools_used">here</a></span> to have access to the repo 
                             </p>

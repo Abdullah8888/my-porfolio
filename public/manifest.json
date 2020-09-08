@@ -1,25 +1,11 @@
 {
-  "short_name": "Tundev",
-  "name": "Tundev app",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "main.js": "bundle.js",
+  "vendors~main.js": "1.bundle.js",
+  "circle_jt_image.png": "circle_jt_image.png",
+  "favicon.ico": "favicon.ico",
+  "github.png": "github.png",
+  "index.html": "index.html",
+  "linkedin.png": "linkedin.png",
+  "medium.png": "medium.png",
+  "twitter.png": "twitter.png"
 }

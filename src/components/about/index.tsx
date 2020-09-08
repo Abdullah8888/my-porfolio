@@ -16,14 +16,16 @@ class About extends React.PureComponent {
 
 					<div>
 						<h2>My Tech Background</h2>
-						<p>I started with Desktop publishing and Networking, afterwards
-							i started creating Desktop apps and writing python scripts 
-							to accomplish Data science and AI task/job for some years. I landed my first job 
-							in Konga as a web developer, where i managed logistics related apps, 
-							after 6 months i joined the mobile team (IOS to be precise) then started learning 
-							swift programming language. I pulled both the company ios ecommerce and finance 
-							app which was written in swift and objective c respectively, 
-							eventually i finally became the master.
+						<p>I started my career with Desktop publishing and Networking, afterwards
+							i found myself in programming, i started creating desktop apps with javafx
+							even got paid for some of the apps. I also write scripts with python to 
+							accomplish data science and machine learning tasks also used it
+							for my final year project (Forecasting of weather using long short term memory [LSTM]).
+							I landed my first job in Konga as a web developer, joined the logistic team
+							therein i managed logistics related apps, 
+							after 6 months i joined the mobile team (IOS to be precise) then 
+							pulled both repos (Konga shopping and kongapay app), learnt from both repos 
+							and finally became the master.
 							{/* <br/>i started creating Desktop apps and writing python scripts 
 							<br/>to accomplish Data science and AI task/job for some years. I landed my first job 
 							<br/>in Konga as a web developer, where i managed logistics related apps, 
