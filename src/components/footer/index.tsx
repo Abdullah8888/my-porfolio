@@ -4,6 +4,7 @@ import twitter from '../../assets/images/social_network_images/twitter.png';
 import linkedin from '../../assets/images/social_network_images/linkedin.png';
 import github from '../../assets/images/social_network_images/github.png';
 import medium from '../../assets/images/social_network_images/medium.png';
+import youtube from '../../assets/images/social_network_images/youtube.png';
 interface Props { }
 interface State {
 };
@@ -34,6 +35,11 @@ export default class Footer extends React.Component<Props, State> {
                         <li>
                             <a href="https://medium.com/@jimoh.abdullah/" target="_blank">
                                 <img src={medium} alt="medium" width="25px" height="27px" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC1zxWw2dL9btUTLgHQVJtOw/" target="_blank">
+                                <img src={youtube} alt="youtube" width="27px" height="27px" />
                             </a>
                         </li>
                     </ul>
