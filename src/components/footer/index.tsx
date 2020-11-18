@@ -18,7 +18,7 @@ export default class Footer extends React.Component<Props, State> {
                 <div className="social_network_logo">
                     <ul>
                         <li>
-                            <a href="https://twitter.com/JIMOHAbdullahB2/" target="_blank">
+                            <a href="https://twitter.com/tunDev_" target="_blank">
                                 <img src={twitter} alt="twitter" width="30px" height="30px" />
                             </a>
                         </li>
