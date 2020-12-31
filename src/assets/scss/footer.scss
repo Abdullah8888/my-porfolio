@@ -9,7 +9,7 @@
     padding: 15px 10%;
 
     .social_network_logo {
-      padding: 20px;
+      padding: 20px 20px 10px 20px;
       ul > li {
         list-style: none;
         display: inline;
@@ -23,6 +23,10 @@
       color: rgba(8, 136, 169, 1);
       text-decoration: none;
       padding-left: 5px;
+  }
+
+  .privacy {
+    padding-bottom: 10px;
   }
 
 /* Using SCSS variables to store breakpoints */

@@ -1,0 +1,24 @@
+@import './utils';
+
+.privacy_policy_container {
+    background-color: #24252A;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding-top: 30px;
+    color: white;
+
+    .privacy_policy_header {
+        text-align: center;
+    }
+
+    .privacy_policy_content {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 70px;
+
+        p {
+            padding-bottom: 20px;
+        }
+    }
+}

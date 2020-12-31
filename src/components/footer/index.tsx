@@ -5,12 +5,14 @@ import linkedin from '../../assets/images/social_network_images/linkedin.png';
 import github from '../../assets/images/social_network_images/github.png';
 import medium from '../../assets/images/social_network_images/medium.png';
 import youtube from '../../assets/images/social_network_images/youtube.png';
+import { Link, NavLink } from 'react-router-dom';
 interface Props { }
 interface State {
 };
 
 export default class Footer extends React.Component<Props, State> {
-
+    
+    
 
     render() {
         return (
@@ -44,11 +46,18 @@ export default class Footer extends React.Component<Props, State> {
                         </li>
                     </ul>
                 </div>
+
+                <div className="privacy">
+                    <NavLink to="/privacy_policy" className="link " activeClassName="current">  Privacy Policy </NavLink>
+                </div>
+
                 <div className="copyright">
                     Copyright &copy; {new Date().getFullYear()}
                     <a href="https://dev-tunde.firebaseapp.com/" className="footer-host-link">dev-tunde.firebaseapp.com</a>
 
                 </div>
+
+                
 
             </div>
             //<div className="copyright">Copyright &copy; {new Date().getFullYear()} <a href="https://dev-tunde.firebaseapp.com/" className="footer-host-link">dev-tunde.firebaseapp.com</a></div>

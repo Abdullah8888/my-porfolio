@@ -241,11 +241,13 @@ export default class Projects extends React.Component<ImageSliderState> {
                         </div>
 
                         <div className="project_card_bottom">
-                            <p>Responsible for maintaining and optimizing the performance of the app. I
+                            <p>Act as project lead, responsible for maintaining and optimizing the performance of the app. I
                                integrated Smartech sdk to track number of user per event and for push notification,
                                online sales AI integration for product Ads in the app, added new relic to track
                                users' interaction with the app and crash report, implemented new homepage design,
-                               fixed bug on network request seen as a malicious bot on the server and lot more.
+                               fixed bug on network request seen as a malicious bot on the server, configured Kongapay sdk
+                               with swift latest version and reimplement the its hashing process. Added Konga prime 
+                               for free delivery and redesigned the whole app, which will be live soon.
                                 <br/><i className="tools_used">Tools used: Swift, Xcode</i> 
                             </p>
                         </div>
@@ -268,7 +270,7 @@ export default class Projects extends React.Component<ImageSliderState> {
                         </div>
 
                         <div className="project_card_bottom">
-                            <p>I built a custom UIPickerView with Objective c
+                            <p>Act as project lead, i built a custom UIPickerView with Objective c
                                 and updated the DSTV/GOTV subscription endpoints,
                                added pop up notification for a new version of the app,
                                fixed bugs and improve app performance.
@@ -342,8 +344,7 @@ export default class Projects extends React.Component<ImageSliderState> {
                         </div>
 
                         <div className="project_card_bottom">
-                            <p>Shopping is a demo app. This was built to improve and perfect
-                                my flutter skills.
+                            <p>Shopping app, this was built using flutter.
                                 <br/><i className="tools_used">Tools used: Flutter, Dart, vscode</i>
                                 <br/>click <span><a href="https://github.com/Abdullah8888/flutter_shopping_app" className="tools_used">here</a></span> to have access to the repo 
                             </p>
@@ -364,8 +365,7 @@ export default class Projects extends React.Component<ImageSliderState> {
                         </div>
 
                         <div className="project_card_bottom">
-                            <p>Portfolio is a demo app. This was built to improve and perfect
-                                my kotlin skills. <br/><i className="tools_used">Tools used: Kotlin, Android Studio</i>
+                            <p>Portfolio app. <br/><i className="tools_used">Tools used: Kotlin, Android Studio</i>
                                 <br/>click <span><a href="https://github.com/Abdullah8888/PortfolioApp" className="tools_used">here</a></span> to have access to the repo 
                             </p>
                         </div>

@@ -8,6 +8,7 @@ import { Route, Switch } from 'react-router-dom';
 import '../assets/scss/App.scss';
 import Projects from './projects';
 import BLog from './blog';
+import PrivacyPolicy from './privacy_policy';
 
 
 class App extends React.PureComponent {
@@ -22,6 +23,7 @@ class App extends React.PureComponent {
                             <Route path="/services" component={Services} />
                             <Route path="/projects" component={Projects} />
                             <Route path="/blog" component={BLog} />
+                            <Route path="/privacy_policy" component={PrivacyPolicy} />
                         </Switch>
                     </main>
                 <Footer/>
